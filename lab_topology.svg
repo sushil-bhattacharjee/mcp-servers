@@ -1,0 +1,113 @@
+<svg viewBox="0 0 1180 700" xmlns="http://www.w3.org/2000/svg" style="background:#10161d" font-family="JetBrains Mono,Cascadia Code,ui-monospace,Consolas,monospace">
+  <rect x="0" y="0" width="1180" height="700" fill="#10161d"/>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9fb3c8"/>
+    </marker>
+    <marker id="arrd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5c6875"/>
+    </marker>
+  </defs>
+
+  <!-- Anthropic cloud -->
+  <rect x="420" y="14" width="300" height="46" rx="23" fill="#1b2430" stroke="#3a4a5e"/>
+  <text x="570" y="33" text-anchor="middle" fill="#d7dde5" font-size="13" font-weight="700">Anthropic API</text>
+  <text x="570" y="49" text-anchor="middle" fill="#8b96a5" font-size="10.5">api.anthropic.com · Claude = agent brain #1</text>
+
+  <!-- ================= W11 ZONE ================= -->
+  <rect x="20" y="90" width="310" height="570" rx="6" fill="rgba(77,128,184,0.07)" stroke="#4d80b8" stroke-width="1.4"/>
+  <text x="34" y="112" fill="#4d80b8" font-size="12" font-weight="700" letter-spacing="1.5">W11 HOST</text>
+  <text x="34" y="128" fill="#8b96a5" font-size="11">192.168.89.102</text>
+
+  <rect x="45" y="150" width="260" height="62" rx="5" fill="#171f29" stroke="#3a4a5e" stroke-dasharray="5 4"/>
+  <text x="58" y="173" fill="#d7dde5" font-size="12" font-weight="700">Claude Desktop  (optional)</text>
+  <text x="58" y="190" fill="#8b96a5" font-size="10.5">alt MCP host — needs HTTP/SSE</text>
+  <text x="58" y="203" fill="#8b96a5" font-size="10.5">transport to reach the server</text>
+
+  <rect x="45" y="440" width="260" height="70" rx="5" fill="#171f29" stroke="#3a4a5e"/>
+  <text x="58" y="464" fill="#d7dde5" font-size="12" font-weight="700">Ollama  :11434</text>
+  <text x="58" y="481" fill="#8b96a5" font-size="10.5">gpt-oss / qwen local models</text>
+  <text x="58" y="494" fill="#8b96a5" font-size="10.5">agent brain #2 (local, offline-safe)</text>
+
+  <text x="34" y="628" fill="#5c6875" font-size="10.5">VMware Workstation Pro</text>
+  <text x="34" y="642" fill="#5c6875" font-size="10.5">hosts UbuntuPro VM + CML VM</text>
+
+  <!-- ================= UBUNTU ZONE ================= -->
+  <rect x="370" y="90" width="400" height="570" rx="6" fill="rgba(217,118,43,0.06)" stroke="#d9762b" stroke-width="1.4"/>
+  <text x="384" y="112" fill="#d9762b" font-size="12" font-weight="700" letter-spacing="1.5">UBUNTUPRO VM</text>
+  <text x="384" y="128" fill="#8b96a5" font-size="11">192.168.89.98</text>
+
+  <rect x="400" y="150" width="340" height="66" rx="5" fill="#171f29" stroke="#4a5a6e"/>
+  <text x="414" y="173" fill="#d7dde5" font-size="12" font-weight="700">Claude Code — MCP HOST</text>
+  <text x="414" y="190" fill="#8b96a5" font-size="10.5">reads .mcp.json · spawns server as child</text>
+  <text x="414" y="203" fill="#8b96a5" font-size="10.5">process · runs the agentic loop</text>
+
+  <rect x="400" y="286" width="340" height="88" rx="5" fill="#171f29" stroke="#2a9d8f" stroke-width="1.3"/>
+  <text x="414" y="309" fill="#d7dde5" font-size="12" font-weight="700">cml_mcp_server.py</text>
+  <text x="414" y="326" fill="#8b96a5" font-size="10.5">fastmcp + virl2_client · ~/cml-mcp/venv</text>
+  <text x="414" y="341" fill="#a8d4c8" font-size="10.5">list_labs · get_lab · duplicate_lab · start_lab</text>
+  <text x="414" y="355" fill="#a8d4c8" font-size="10.5">stop_lab · delete_node · set_node_ram · extract</text>
+
+  <rect x="400" y="470" width="340" height="110" rx="5" fill="#171f29" stroke="#4a5a6e"/>
+  <text x="414" y="493" fill="#d7dde5" font-size="12" font-weight="700">hiTech Automation AI</text>
+  <text x="414" y="510" fill="#8b96a5" font-size="10.5">FastAPI :7071 · agent tool loop · RAG</text>
+  <text x="414" y="524" fill="#8b96a5" font-size="10.5">NETCONF/RESTCONF/CLI/XPath/Python</text>
+  <text x="414" y="541" fill="#8b96a5" font-size="10.5">tools · YANG Explorer</text>
+  <text x="414" y="562" fill="#5c6875" font-size="10.5" font-style="italic">future: MCP client (consumes same server)</text>
+
+  <!-- ================= CML ZONE ================= -->
+  <rect x="810" y="90" width="350" height="570" rx="6" fill="rgba(42,157,143,0.06)" stroke="#2a9d8f" stroke-width="1.4"/>
+  <text x="824" y="112" fill="#2a9d8f" font-size="12" font-weight="700" letter-spacing="1.5">CML 2.8 VM</text>
+  <text x="824" y="128" fill="#8b96a5" font-size="11">192.168.89.100</text>
+
+  <rect x="835" y="266" width="300" height="88" rx="5" fill="#171f29" stroke="#4a5a6e"/>
+  <text x="849" y="289" fill="#d7dde5" font-size="12" font-weight="700">CML Controller — REST API</text>
+  <text x="849" y="306" fill="#8b96a5" font-size="10.5">base: /api/v0 · docs: /api/v0/ui</text>
+  <text x="849" y="320" fill="#8b96a5" font-size="10.5">auth: POST /authenticate → JWT</text>
+  <text x="849" y="337" fill="#8b96a5" font-size="10.5">manages lab lifecycle via KVM</text>
+
+  <!-- devices pod -->
+  <rect x="835" y="410" width="300" height="200" rx="6" fill="rgba(192,90,80,0.10)" stroke="#c05a50" stroke-width="1.3"/>
+  <text x="849" y="432" fill="#c05a50" font-size="11.5" font-weight="700" letter-spacing="1">LAB: DEVEXPERT</text>
+  <text x="849" y="452" fill="#d7dde5" font-size="11">cat8Kv71 · cat8Kv72 (IOS-XE)</text>
+  <text x="849" y="468" fill="#d7dde5" font-size="11">nx9K73 (NX-OS) · Ubuntu node</text>
+  <text x="849" y="490" fill="#8b96a5" font-size="10.5">ext-conn-0 bridge → 192.168.89.0/24</text>
+  <text x="849" y="514" fill="#a8d4c8" font-size="10.5">NETCONF :830 · RESTCONF :443</text>
+  <text x="849" y="528" fill="#a8d4c8" font-size="10.5">SSH :22 (Netmiko)</text>
+  <text x="849" y="552" fill="#5c6875" font-size="10">device creds ≠ CML creds —</text>
+  <text x="849" y="566" fill="#5c6875" font-size="10">they live in the node configs</text>
+
+  <!-- ================= WIRES ================= -->
+  <!-- Claude Code -> Anthropic -->
+  <line x1="570" y1="150" x2="570" y2="64" stroke="#9fb3c8" stroke-width="1.4" marker-end="url(#arr)" marker-start="url(#arr)"/>
+  <text x="580" y="96" fill="#8b96a5" font-size="10.5">HTTPS :443</text>
+  <text x="580" y="110" fill="#8b96a5" font-size="10.5">reasoning + tool decisions</text>
+
+  <!-- Claude Code <-> MCP server -->
+  <line x1="570" y1="216" x2="570" y2="282" stroke="#9fb3c8" stroke-width="1.4" marker-end="url(#arr)" marker-start="url(#arr)"/>
+  <text x="580" y="240" fill="#a8d4c8" font-size="10.5" font-weight="700">stdio · JSON-RPC 2.0</text>
+  <text x="580" y="254" fill="#8b96a5" font-size="10.5">initialize → tools/list → tools/call</text>
+
+  <!-- MCP server -> CML controller -->
+  <line x1="740" y1="322" x2="831" y2="308" stroke="#9fb3c8" stroke-width="1.4" marker-end="url(#arr)"/>
+  <text x="748" y="296" fill="#a8d4c8" font-size="10.5" font-weight="700">HTTPS /api/v0</text>
+  <text x="748" y="310" fill="#8b96a5" font-size="10.5">Bearer JWT</text>
+
+  <!-- hiTech -> Ollama -->
+  <line x1="400" y1="500" x2="309" y2="482" stroke="#9fb3c8" stroke-width="1.4" marker-end="url(#arr)"/>
+  <text x="316" y="466" fill="#8b96a5" font-size="10.5">HTTP :11434 /api/chat</text>
+
+  <!-- hiTech -> devices -->
+  <line x1="740" y1="510" x2="831" y2="500" stroke="#9fb3c8" stroke-width="1.4" marker-end="url(#arr)"/>
+  <text x="748" y="486" fill="#8b96a5" font-size="10.5">NETCONF · RESTCONF · SSH</text>
+
+  <!-- future: hiTech as MCP client -->
+  <line x1="620" y1="470" x2="620" y2="378" stroke="#5c6875" stroke-width="1.3" stroke-dasharray="6 5" marker-end="url(#arrd)"/>
+  <text x="632" y="416" fill="#5c6875" font-size="10.5" font-style="italic">future: MCP client</text>
+  <text x="632" y="430" fill="#5c6875" font-size="10.5" font-style="italic">(same tools, your loop)</text>
+
+  <!-- Claude Desktop alt transport -->
+  <line x1="305" y1="196" x2="396" y2="300" stroke="#5c6875" stroke-width="1.3" stroke-dasharray="6 5" marker-end="url(#arrd)"/>
+  <text x="230" y="240" fill="#5c6875" font-size="10.5" font-style="italic">alt: HTTP/SSE</text>
+  <text x="230" y="254" fill="#5c6875" font-size="10.5" font-style="italic">transport</text>
+</svg>

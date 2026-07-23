@@ -1,0 +1,11 @@
+[project]
+name = "network-device-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp>=3.4.4",
+    "netmiko>=4.7.0",
+    "python-dotenv>=1.2.2",
+]
